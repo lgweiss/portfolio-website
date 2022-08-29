@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="459" height="171" viewBox="0 0 459 171">
+  <defs>
+    <clipPath id="clip-Logo">
+      <rect width="459" height="171"/>
+    </clipPath>
+  </defs>
+  <g id="Logo" clip-path="url(#clip-Logo)">
+    <rect width="459" height="171" fill="#fff"/>
+    <g id="Group_1" data-name="Group 1" transform="translate(-127 -103)">
+      <text id="FREELANCE_UI_DESIGNER" data-name="FREELANCE UI DESIGNER" transform="translate(139 250)" stroke="#000" stroke-width="1" font-size="36" font-family="AvenirNext-UltraLight, Avenir Next" font-weight="100" letter-spacing="0.01em"><tspan x="0" y="0">FREELANCE UI DESIGNER</tspan></text>
+      <text id="Lila_Weiss" data-name="Lila Weiss" transform="translate(139 187)" stroke="#000" stroke-width="3" font-size="100" font-family="IsleHeadlinePERSONALUSE-Light, Isle Headline PERSONAL USE" font-weight="300"><tspan x="0" y="0">Lila Weiss</tspan></text>
+    </g>
+  </g>
+</svg>
