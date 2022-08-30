@@ -1,0 +1,88 @@
+/*
+Colors used:
+Primary Color (Dark Pink): #D96F99
+Secondary Color (Light Pink): #FFE3F4
+*/
+body {
+  background-color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #453D3F;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #D96F99;
+  text-decoration: none; /* No underlining */
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:visited {/* visited link */
+  color: #D96F99;
+}
+
+a:active { /* selected link */
+  color: #ffffff;
+}
+
+a:hover,
+a:focus {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  background-color: #D96F99;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px
+  border-radius: 3px;
+  border-bottom: 2px solid #A35071;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #D96F99;
+  text-transform: uppercase;
+  border: 2px solid #D96F99;
+}
+
+.button.contact:hover {
+  background-color: #D96F99;
+  color: #ffffff;
+}
