@@ -12,12 +12,12 @@
   <title>LilaWeiss UI/UX Designer McLean,VA</title>
 </head>
 
-<body>
+<body id="index">
   <!-- For the header -->
   <header>
-    <div>
+    <div class="container">
       <a href="index.html">
-        <img src="img/lila-weiss_Logo.svg" alt="Lila Weiss">
+        <img src="img/lila-weiss_Logo.svg" alt="Lila Weiss" class="logo">
       </a>
       <nav>
         <ul>
@@ -32,9 +32,9 @@
   <!-- For the hero section -->
   <main>
     <!--the main contents of the page-->
-    <div>
+    <div id="hero">
       <!--open space for hero section-->
-      <div>
+      <div class="container">
         <!--open content wrapper-->
         <h1>Hi, I'm Lila!</h1>
         <span>I'm aim to create UI designs that are simple, aesthetically pleasing, and user-centric.</span>
@@ -46,11 +46,12 @@
     <!--close hero section-->
 
     <!-- For your work/projects -->
-    <div>
-      <!--open row that holds columns for project-->
-      <div>
+    <div id="work">
+      <!--open row that hold (2) columns for project-->
+      <div class="container">
         <!--open first column (used for image)-->
         <h2>My Work</h2>
+          <div class="row">
         <picture>
           <source srcset="img/home/homepage_cache01.jpg" media="(max-width:767px)">
           <!--image for smaller screens/breakpoints-->
@@ -58,19 +59,22 @@
           <!--image for larger screens/breakpoints-->
         </picture>
       </div>
+      </div>
       <!--end first column-->
-      <div>
+      <div class="container">
         <!--open second column (used for text)-->
         <h3>Cache: A Responsive Web App</h3>
+        <div class="row">
         <!--heading for the project-->
         <p>Cache is a responsive web app designed to help users budget for large, planned expenses. The app is designed for users to input data when spending or receiving money so they can view accurate information on their finances and receive
           encouragement on how they can save more money.</p>
         <a href="cache.html" class="button">View Project</a>
         <!--button or link label-->
       </div>
+      </div>
       <!--end second column-->
     </div><!-- end row that holds (2) columns for project-->
-    <div>
+    <div class="container">
       <!--open row that holds (2) columns for project-->
       <div><!--column 1-->
         <picture>
@@ -83,6 +87,7 @@
     <!--end of first column-->
     <div><!--open second column (used for text)-->
       <h3>Dolce: A Responsive Web App</h3>
+      <div class="row">
       <!--heading for the project-->
       <p>Dolce is a personal, specialized responsive web app that tailors the experience to people who love desserts. It allows users to explore different dessert recipes, upload photos of their desserts, and share popular dessert locations.</p>
       <a href="#" class="button">View Project</a>
@@ -91,12 +96,14 @@
       <!--end second column-->
       </div>
       <!--end row that holds (2) columns for project-->
+      </div>
   </main>
 
   <!-- For the footer -->
-  <footer id="contact">
-    <div>
-      <h4>Get in Touch</h4>
+  <footer>
+    <div id="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
       <p>I'm always looking for ways to solve problems or to exchange ideas. Call: <a href="tel:+16158186723">+1 6158186723</a>. Prefer sending an email?</p>
       <div>
         <a href="mailto:lweiss.giau@gmail.com" class="button contact">Email me</a>
@@ -127,6 +134,7 @@
         </a>
       </div>
       <p>Copyright Lila Weiss 2022</p>
+    </div>
     </div>
   </footer>
 
