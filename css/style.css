@@ -1,8 +1,57 @@
 /*
 Colors used:
 Primary Color (Dark Pink): #D96F99
-Secondary Color (Light Pink): #FFE3F4
+Secondary Color (Light Pink): #FFF0F9
 */
+header {
+  background-color: #FFF0F9;
+  text-align: center;
+  padding: 10px 0; /* Adds a 10px inner space to all sides */
+  margin: 0px; /* Adds a 10px space around the header */
+  border-bottom: 2px solid #D96F99;
+  box-shadow:         0px 3px 12px 0px rgba(35, 40, 43, 0.36);
+  position: relative;
+}
+
+main {
+  padding-top: 3px
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+nav > ul > li > a:visited {
+  color: #453D3F;
+}
+
+nav > ul > li > a:hover {
+  color: #D96F99;
+}
+
+nav > ul > li > a:active {
+  color: #453D3F;
+}
+
+
 body {
   background-color: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
@@ -41,21 +90,21 @@ a {
 }
 
 a:hover {
-  color: #ffffff;
+  color: #D96F99;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 a:visited {/* visited link */
-  color: #D96F99;
+  color: #453D3F;
 }
 
 a:active { /* selected link */
-  color: #ffffff;
+  color: #453D3F;
 }
 
 a:hover,
 a:focus {
-  color: #ffffff;
+  color: #D96F99;
   text-decoration: underline;
 }
 
@@ -85,4 +134,45 @@ a:focus {
 .button.contact:hover {
   background-color: #D96F99;
   color: #ffffff;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.logo {
+  max-width: 250px;
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+#work h2 {
+  text-align: center; /* Centers text */
+}
+
+#story h2 {
+  text-align: center; /* Centers text */
+}
+
+#skills h2 {
+  text-align: center; /* Centers text */
+}
+
+#contact h2 {
+  text-align: center; /* Centers text */
+}
+
+#hero {
+  background-color: #FFF0F9;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
