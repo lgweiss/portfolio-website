@@ -3,61 +3,17 @@ Colors used:
 Primary Color (Dark Pink): #D96F99
 Secondary Color (Light Pink): #FFF0F9
 */
-header {
-  background-color: #FFF0F9;
-  text-align: center;
-  padding: 10px 0; /* Adds a 10px inner space to all sides */
-  margin: 0px; /* Adds a 10px space around the header */
-  border-bottom: 2px solid #D96F99;
-  box-shadow:         0px 3px 12px 0px rgba(35, 40, 43, 0.36);
-  position: relative;
-}
-
-main {
-  padding-top: 3px
-}
-
-
 * {
   box-sizing: border-box;
 }
-
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
-  width: 100%;
-}
-
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-nav > ul > li > a:visited {
-  color: #453D3F;
-}
-
-nav > ul > li > a:hover {
-  color: #D96F99;
-}
-
-nav > ul > li > a:active {
-  color: #453D3F;
-}
-
 
 body {
   background-color: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.6;
-  color: #453D3F;
+  color: #000;
 }
 
 h1 {
@@ -111,15 +67,21 @@ a:focus {
 .button {
   display: inline-block;
   background-color: #D96F99;
-  color: #ffffff;
-  font-weight: 400;
-  padding: 10px
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0;
   border-radius: 3px;
   border-bottom: 2px solid #A35071;
   transition: 0.2s opacity;
 }
 
-.button:hover {
+transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+
+.button:hover,
+.button:focus {
+  color: #ffffff;
   opacity: 0.8;
   text-decoration: none;
 }
@@ -131,10 +93,52 @@ a:focus {
   border: 2px solid #D96F99;
 }
 
+.button:active {
+  color: #ffffff;
+}
+
 .button.contact:hover {
   background-color: #D96F99;
   color: #ffffff;
 }
+
+header {
+  background-color: #FFF0F9;
+  padding: 10px 0 4px; /* Adds a 10px inner space to all sides */
+  margin: 0; /* Adds a 10px space around the header */
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+  position: fixed;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #D96F99;
+}
+
+nav > ul > li > a:visited {
+  color: #453D3F;
+}
+
+nav > ul > li > a:hover {
+  color: #D96F99;
+}
+
+nav > ul > li > a:active {
+  color: #453D3F;
+}
+
 
 /* Layout styling */
 
@@ -144,6 +148,12 @@ a:focus {
 
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .logo {
@@ -172,7 +182,93 @@ a:focus {
 
 #hero {
   background-color: #FFF0F9;
+  text-align: center;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+  }
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+  }
+
+body {
+  font-size: 16px;
+}
+
+#hero span {
+  display: block;
+}
+
+#story. row {
+  border-bottom: unset;
+  padding: 0;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.logo {
+  max-width: 250px;
+  max-height: 64px;
+  width: auto;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+.navtoggle li:not (:last-child) {
+  display: inline-block;
+}
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+
+@keyframes cloud-move {
+  from {transform: translate (0,50px);}
+  to {transform: translate (200px, 50px;)}
+}
+
+.clouds {
+  animation: 30s cloud-move infinite alternate linear;
 }
