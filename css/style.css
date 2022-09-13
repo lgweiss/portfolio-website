@@ -1,25 +1,33 @@
-/*
-Colors used:
-Primary Color (Dark Pink): #D96F99
-Secondary Color (Light Pink): #FFF0F9
-*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+
+/*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
 * {
   box-sizing: border-box;
 }
 
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*default body settings*/
+
 body {
   background-color: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 400; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #000;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
 }
 
 h1 {
   font-size: 2.75em;
   font-weight: 700;
 }
+
+
 
 h2 {
   font-size: 2.25em;
@@ -29,41 +37,43 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 400;
+  /*margin-top: -8px;*/
 }
+
+/*#about-page h3 { margin-top: 0;}*/
 
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
 
+
+/*setting images to full-width*/
 img {
   width: 100%;
 }
 
+/*change the default link color to your primary color (copied from your comments at the top of the document)*/
 a {
   color: #D96F99;
   text-decoration: none; /* No underlining */
 }
-
 a:hover {
-  color: #D96F99;
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
-
-a:visited {/* visited link */
-  color: #453D3F;
+  text-decoration: none; /* Underlining when hovering over a link */
 }
 
 a:active { /* selected link */
   color: #453D3F;
 }
 
+/*Pseudo classes for Accessibility for Across the Web*/
 a:hover,
 a:focus {
-  color: #D96F99;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
+
+/*CSS code for the button class*/
 .button {
   display: inline-block;
   background-color: #D96F99;
@@ -77,38 +87,71 @@ a:focus {
   transition: 0.2s opacity;
 }
 
-transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
-
 .button:hover,
 .button:focus {
-  color: #ffffff;
   opacity: 0.8;
+  color: #ffffff;
   text-decoration: none;
-}
-
-.button.contact {
-  background-color: transparent;
-  color: #D96F99;
-  text-transform: uppercase;
-  border: 2px solid #D96F99;
 }
 
 .button:active {
   color: #ffffff;
 }
 
+
+/*button rules for the mailto button*/
+.button.contact {
+  background-color: transparent;
+  color: #D96F99;
+  text-transform: uppercase;
+  border: 2px solid #D96F99;
+  /*transition: 0.8s opacity;*/
+}
+
+/*button class hover and active state*/
+
 .button.contact:hover {
   background-color: #D96F99;
   color: #ffffff;
 }
+/*
+.button.contact:active {
+  opacity: 0.8;
+  background-color: green;
+  color: #ffffff;
+}
+*/
 
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*stye the page sections*/
+
+/*style the <header> element*/
 header {
   background-color: #FFF0F9;
-  padding: 10px 0 4px; /* Adds a 10px inner space to all sides */
-  margin: 0; /* Adds a 10px space around the header */
-  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+  text-align: center;
+  padding: 10px 0 4px;
   position: fixed;
+  box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
   width: 100%;
+}
+
+/*style the logo*/
+/*
+header .logo {
+  max-width: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+*/
+
+.logo {
+  max-width: 250px;
+}
+
+/*Navigation Styling*/
+nav {
+  display: inline-block;
 }
 
 nav > ul {
@@ -139,7 +182,38 @@ nav > ul > li > a:active {
   color: #453D3F;
 }
 
+#hero {
+  background-color: #FFF0F9;
+  padding: 160px 0 40px 0;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
 
+#contact {
+    text-align: center;
+    background-color: #FFF0F9;
+    padding: 20px;
+}
+
+#work {
+  background-color: #ffffff;
+  padding: 30px 0 40px 0;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+#skills {
+  background-color: #ffffff;
+  padding: 30px 0 40px 0;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
 /* Layout styling */
 
 .container {
@@ -150,125 +224,140 @@ nav > ul > li > a:active {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
+#work .row { padding-bottom: 20px; }
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*SVG anamation*/
+.svg-animation {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+/*single line...
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+*/
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+/*single line...
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+*/
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*Media Queries*/
+
+/*clear page flow*/
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.logo {
-  max-width: 250px;
+/*float all columns left*/
+[class*="col-"] {
+  padding: 10px;
 }
-
-#hero h1 {
-  text-align: center; /* Centers text */
-}
-
-#work h2 {
-  text-align: center; /* Centers text */
-}
-
-#story h2 {
-  text-align: center; /* Centers text */
-}
-
-#skills h2 {
-  text-align: center; /* Centers text */
-}
-
-#contact h2 {
-  text-align: center; /* Centers text */
-}
-
-#hero {
-  background-color: #FFF0F9;
-  text-align: center;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
-
-
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-header {
-  text-align: unset;
-  padding: 20px 0 13px;
+  body {
+    font-size: 18px;
   }
 
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
   }
 
-body {
-  font-size: 16px;
-}
+  nav {
+    width: auto;
+    float: right;
+  }
 
-#hero span {
-  display: block;
-}
-
-#story. row {
-  border-bottom: unset;
-  padding: 0;
-}
-
-.col-md-6 {
-  width: 50%;
-}
-
-.logo {
-  max-width: 250px;
-  max-height: 64px;
-  width: auto;
-}
-
-nav > ul > li {
-  display: inline-block;
-}
-
-.navtoggle li:not (:last-child) {
-  display: inline-block;
-}
+  .col-md-6 {
+    width: 50%;
+    float: left;
+    padding-bottom: 40px;
+  }
 
 }
+
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-}
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    #hero {
+        padding: 140px 0 40px 0;
+    }
 
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-}
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col-lg-7 {
+    width: 60%;
+  }
 
+  .col-lg-5 {
+    width: 40%;
+  }
 
+  .col-lg-7 {
+    width: 60%;
+    float: left;
+    padding-bottom: 40px;
+  }
+  .col-lg-8 {
+    width: 40%;
+    float: right;
+  }
 
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
-
-
-@keyframes cloud-move {
-  from {transform: translate (0,50px);}
-  to {transform: translate (200px, 50px;)}
-}
-
-.clouds {
-  animation: 30s cloud-move infinite alternate linear;
+   #about-page .col-md-6 {
+     width: 100%;
+  }
 }
