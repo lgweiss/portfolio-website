@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script
+			src="https://kit.fontawesome.com/319bcd23ee.js"
+			crossorigin="anonymous"
+		></script>
     <meta charset="utf-8">
     <meta name="author" content="Lila Weiss">
     <meta name="description" content="This is the index page. Includes Website Intro and My Work.">
@@ -15,6 +19,7 @@
 	<header>
 		<!-- For the navigation -->
 		<div class="container">
+      <div class="navtoggle" id="myNavtoggle">
             <a href="index.html">
 			 <img src="img/lila-weiss_Logo.svg" class="logo" alt="Lila Weiss" >
             </a>
@@ -23,8 +28,10 @@
                 <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
               </ul>
             </nav>
+            </div>
 		</div>
 	</header>
 
@@ -56,7 +63,7 @@
                     <p><!-- open paragraph -->
                       Cache is a responsive web app designed to help users budget for large, planned expenses. The app is designed for users to input data when spending or receiving money so they can view accurate information on their finances and receive encouragement on how they can save more money.
                     </p><!-- end paragraph -->
-                    <a href="#" class="button">View Project</a><!-- button or link label -->
+                    <a href="cache.html" class="button">View Project</a><!-- button or link label -->
                   </div><!-- end second column -->
                 </div><!-- end row that holds (2) columns for project -->
 
@@ -733,5 +740,9 @@
         </div>
 
 	</footer>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
   </body>
 </html>
