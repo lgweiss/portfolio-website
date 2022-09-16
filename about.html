@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script
+			src="https://kit.fontawesome.com/319bcd23ee.js"
+			crossorigin="anonymous"
+		></script>
     <meta charset="utf-8">
     <meta name="author" content="Lila Weiss">
-    <meta name="description" content="This is the index page. Includes Website Intro and My Work.">
+    <meta name="description" content="This is the about page. Includes my story.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<link href="img/fav/favicon.ico" rel="shortcut icon">-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -15,6 +19,7 @@
 	<header>
 		<!-- For the navigation -->
 		<div class="container">
+      <div class="navtoggle" id="myNavtoggle">
             <a href="index.html">
 			 <img src="img/lila-weiss_Logo.svg" class="logo" alt="Lila Weiss" >
             </a>
@@ -23,8 +28,10 @@
                 <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
               </ul>
             </nav>
+            </div>
 		</div>
 	</header>
 
