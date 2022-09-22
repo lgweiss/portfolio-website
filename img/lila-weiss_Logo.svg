@@ -1,14 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="459" height="171" viewBox="0 0 459 171">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="227" height="101" viewBox="0 0 227 101">
   <defs>
-    <clipPath id="clip-Logo">
-      <rect width="459" height="171"/>
+    <clipPath id="clip-Logo_2">
+      <rect width="227" height="101"/>
     </clipPath>
   </defs>
-  <g id="Logo" clip-path="url(#clip-Logo)">
-    <rect width="459" height="171" fill="#fff"/>
-    <g id="Group_1" data-name="Group 1" transform="translate(-127 -103)">
-      <text id="FREELANCE_UI_DESIGNER" data-name="FREELANCE UI DESIGNER" transform="translate(139 250)" stroke="#000" stroke-width="1" font-size="36" font-family="AvenirNext-UltraLight, Avenir Next" font-weight="100" letter-spacing="0.01em"><tspan x="0" y="0">FREELANCE UI DESIGNER</tspan></text>
-      <text id="Lila_Weiss" data-name="Lila Weiss" transform="translate(139 187)" stroke="#000" stroke-width="3" font-size="100" font-family="IsleHeadlinePERSONALUSE-Light, Isle Headline PERSONAL USE" font-weight="300"><tspan x="0" y="0">Lila Weiss</tspan></text>
+  <g id="Logo_2" data-name="Logo 2" clip-path="url(#clip-Logo_2)">
+    <rect width="227" height="101" fill="#fff0f9"/>
+    <g id="Group_1" data-name="Group 1" transform="translate(-135 -55.723)">
+      <text id="Lila_Weiss" data-name="Lila Weiss" transform="translate(135 125.723)" font-size="42" font-family="VacationsinParadisePersonalUse, Vacations in Paradise Personal "><tspan x="0" y="0">Lila Weiss</tspan></text>
     </g>
   </g>
 </svg>
