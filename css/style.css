@@ -211,10 +211,6 @@ nav > ul > li > a:active {
   width: 100%;
 }
 
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
@@ -225,6 +221,14 @@ nav > ul > li > a:active {
   top: 2px;
   font-size: 20px;
   padding-right: 0;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
 }
 
 .navtoggle.responsive li{
@@ -336,6 +340,11 @@ nav > ul > li > a:active {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
+  #hero {
+      padding: 140px 0 40px 0;
+  }
+
   body {
     font-size: 18px;
   }
@@ -366,6 +375,10 @@ Medium devices (640px and larger)
 
   .logo {
     max-width: 250px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
   }
 
   .navtoggle li:last-child {
