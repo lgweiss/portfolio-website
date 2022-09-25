@@ -1,5 +1,4 @@
 /*-------------------------------------------Start Section---------------------------------------------*/
-
 /*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
 * {
   box-sizing: border-box;
@@ -8,13 +7,15 @@
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*default body settings*/
-
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 400; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 400;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #000;
 }
 
@@ -26,8 +27,6 @@ h1 {
   font-size: 2.75em;
   font-weight: 700;
 }
-
-
 
 h2 {
   font-size: 2.25em;
@@ -41,12 +40,10 @@ h3 {
 }
 
 /*#about-page h3 { margin-top: 0;}*/
-
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
-
 
 /*setting images to full-width*/
 img {
@@ -55,15 +52,19 @@ img {
 
 /*change the default link color to your primary color (copied from your comments at the top of the document)*/
 a {
-  color: #D96F99;
-  text-decoration: none; /* No underlining */
-}
-a:hover {
-  text-decoration: none; /* Underlining when hovering over a link */
+  color: #cd4279;
+  text-decoration: none;
+  /* No underlining */
 }
 
-a:active { /* selected link */
-  color: #453D3F;
+a:hover {
+  text-decoration: none;
+  /* Underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link */
+  color: #000;
 }
 
 /*Pseudo classes for Accessibility for Across the Web*/
@@ -72,48 +73,46 @@ a:focus {
   text-decoration: none;
 }
 
-
 /*CSS code for the button class*/
 .button {
   display: inline-block;
-  background-color: #D96F99;
+  background-color: #cd4279;
   color: white;
   font-weight: 600;
   text-decoration: none;
   padding: 10px;
   margin: 0;
   border-radius: 3px;
-  border-bottom: 2px solid #A35071;
+  border-bottom: 2px solid #a35071;
   transition: 0.2s opacity;
 }
 
 .button:hover,
 .button:focus {
   opacity: 0.8;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
 .button:active {
-  color: #ffffff;
+  color: #fff;
 }
-
 
 /*button rules for the mailto button*/
 .button.contact {
   background-color: transparent;
-  color: #D96F99;
+  color: #cd4279;
   text-transform: uppercase;
-  border: 2px solid #D96F99;
+  border: 2px solid #cd4279;
   /*transition: 0.8s opacity;*/
 }
 
 /*button class hover and active state*/
-
 .button.contact:hover {
-  background-color: #D96F99;
-  color: #ffffff;
+  background-color: #cd4279;
+  color: #fff;
 }
+
 /*
 .button.contact:active {
   opacity: 0.8;
@@ -121,18 +120,16 @@ a:focus {
   color: #ffffff;
 }
 */
-
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*stye the page sections*/
-
 /*style the <header> element*/
 header {
-  background-color: #FFF0F9;
+  background-color: #fff0f9;
   /*text-align: center;*/
   padding: 10px 0 4px;
   position: fixed;
-  box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0 7px 5px 0 rgba(50, 50, 50, 0.75);
   width: 100%;
 }
 
@@ -148,90 +145,79 @@ header .logo {
   margin-bottom: 10px;
 }
 */
-
 .logo {
   max-width: 150px;
 }
 
 /*Navigation Styling*/
-
 nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #453D3F;
+  color: #000;
 }
-
-/*nav > ul > li > a:visited {
-  color: #453D3F;
-}*/
 
 nav > ul > li > a:hover {
-  color: #D96F99;
+  color: #cd4279;
 }
 
-nav > ul > li > a:active {
-  color: #453D3F;
+nav > ul > li >a:active {
+  color: #000;
 }
 
 #hero {
-  background-color: #FFF0F9;
-  padding: 160px 0 40px 0;
+  background-color: #fff0f9;
+  padding: 160px 0 40px;
   text-align: center;
   display: inline-block;
   width: 100%;
 }
 
 #contact {
-    text-align: center;
-    background-color: #FFF0F9;
-    padding: 20px;
+  text-align: center;
+  background-color: #fff0f9;
+  padding: 20px;
 }
 
 #work {
-  background-color: #ffffff;
-  padding: 30px 0 40px 0;
+  background-color: #fff;
+  padding: 30px 0 40px;
   text-align: center;
   display: inline-block;
   width: 100%;
 }
 
 #skills {
-  background-color: #ffffff;
-  padding: 30px 0 40px 0;
+  background-color: #fff;
+  padding: 30px 0 40px;
   text-align: left;
   display: inline-block;
   width: 100%;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle, {
   position: relative;
 }
 
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 2px;
+  top: 25px;
   font-size: 20px;
-  padding-right: 0;
+  padding-right: 10;
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle.responsive li{
+.navtoggle.responsive li {
   display: block;
 }
 
@@ -249,20 +235,21 @@ nav > ul > li > a:active {
   padding: 0 0 10px;
 }
 
-
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 /* Layout styling */
-
 .container {
   padding: 0 15px;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
-#work .row { padding-bottom: 20px; }
+#work .row {
+  padding-bottom: 20px;
+}
 
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
@@ -274,9 +261,17 @@ nav > ul > li > a:active {
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -292,10 +287,14 @@ nav > ul > li > a:active {
   animation: 4s color-change infinite alternate linear;
 }
 */
-
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -311,19 +310,23 @@ nav > ul > li > a:active {
   animation: 30s cloud-move infinite alternate linear;
 }
 */
-
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*Media Queries*/
-
 /*clear page flow*/
 .row::after {
   content: "";
@@ -340,9 +343,8 @@ nav > ul > li > a:active {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-
   #hero {
-      padding: 140px 0 40px 0;
+    padding: 140px 0 40px;
   }
 
   body {
@@ -384,18 +386,15 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
-
 }
-
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
-    #hero {
-        padding: 140px 0 40px 0;
-    }
+  #hero {
+    padding: 140px 0 40px;
+  }
 
   .container {
     max-width: 1200px;
@@ -420,13 +419,13 @@ Large devices (1024px or larger)
     float: left;
     padding-bottom: 40px;
   }
+
   .col-lg-8 {
     width: 40%;
     float: right;
   }
 
-
-   #about-page .col-md-6 {
-     width: 100%;
+  #about-page .col-md-6 {
+    width: 100%;
   }
 }
